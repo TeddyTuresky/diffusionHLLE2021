@@ -9,9 +9,11 @@ The following scripts were used to process the raw data and run statistical anal
 
     .
     ├── dtiConvPrepHLE.sh                               <-- conversion from dicom to nrrd using Slicer4 and DTI Prep (https://www.nitrc.org/projects/dtiprep/)
+    ├── dtiGradientSelectGood.m                         <-- removes artifactual gradients identified by DTI Prep. New 4D diffusion volumes generated with dcm2niix
     ├── topEddyHLE.sh                                   <-- topup and eddy from FSL (https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/eddy/UsersGuide)  
     ├── vista_preprocessingHLE.m                        <-- tensorfitting (https://vistalab.stanford.edu/)
     ├── DTI_AFQrun_mrdiff_SPM_HLE.m                     <-- fiber tracking (https://github.com/yeatmanlab/AFQ)
+    ├── wholeBrainTractographyAllTractsSepHLE           <-- quality checks tract reconstructions. adapted from http://yeatmanlab.github.io/AFQ/tutorials/AFQ_example
     ├── dti_corr_perm_100nodes_Spearman.m               <-- partial and semipartial correlations (code fragments taken from https://github.com/yeatmanlab/AFQ 
     ├── AFQ_MultiCompCorrectionPartSpearman.m           <-- multiple comparison corrections for StimQ, adjusted from https://github.com/yeatmanlab/AFQ   
     ├── AFQ_MultiCompCorrectionSemiPartSpearman.m       <-- multiple comparison corrections for maternal education, adjusted from https://github.com/yeatmanlab/AFQ
