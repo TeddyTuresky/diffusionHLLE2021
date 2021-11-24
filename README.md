@@ -2,7 +2,7 @@
 
 This repository houses code (or links to code) used for the following study:
 
-##### *Ted K. Turesky\*, Joseph Sanfilippo\*, Jennifer Zuk, Banu Ahtam, Borjan Gagoski, Ally Lee, Kathryn Garrisi, Jade Dunstan, Clarisa Carruthers, Jolijn Vanderauwera, Xi Yu, Nadine Gaab (2021) Home literacy environment mediates the relationship between socioeconomic status and white matter structure in infants, bioRxiv: doi.org/10.1101/2021.11.13.468500* \*these two authors contributed equally
+##### *Ted K. Turesky\*, Joseph Sanfilippo\*, Jennifer Zuk, Banu Ahtam, Borjan Gagoski, Ally Lee, Kathryn Garrisi, Jade Dunstan, Clarisa Carruthers, Jolijn Vanderauwera, Xi Yu, Nadine Gaab (2021) Home literacy environment mediates the relationship between socioeconomic status and white matter structure in infants, bioRxiv: doi.org/10.1101/2021.11.13.468500*   \*these two authors contributed equally
 
 
 The following scripts were used to process the raw data and run statistical analyses:
