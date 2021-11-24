@@ -4,17 +4,15 @@ This repository houses code (or links to code) used for the following study:
 
 ##### *Ted K. Turesky, Joseph Sanfilippo, Jennifer Zuk, Banu Ahtam, Borjan Gagoski, Ally Lee, Kathryn Garrisi, Jade Dunstan, Clarisa Carruthers, Jolijn Vanderauwera, Xi Yu, Nadine Gaab (2021) Home literacy environment mediates the relationship between socioeconomic status and white matter structure in infants doi.org/10.1101/2021.11.13.468500*
 
-All code was implemented on MacOSX and customized to the input for this particular study, but can be adapted be replacing pertinent paths, filenames, etc.
+All code customized to the input for this particular study, but can be adapted by replacing pertinent paths, filenames, etc.
 
-Raw images were first converted from dicom to nifti format, then inspected for artifacts. Analyses of remaining images (available in BIDS format here: insert link) relied predominantly on Mindboggle software (Klein et al., 2017), which was run in a Docker container according to the "Run one command" instructions here: https://mindboggle.info/. 
-
-Following outputs (from subdirectories of mindboggle123_output > mindboggled > $sub-n) were analyzed:
+The following scripts were used to process the raw data and run statistical analyses:
 
     .
-    ├── freesurfer_wmparc_labels_in_hybrid_graywhite.nii.gz      <-- volumes generated with ANTS and FreeSurfer using FreeSurfer labels 
+    ├── dtiConvPrepHLE.sh          <-- conversion from dicom to nrrd using Slicer4 (https://www.slicer.org/) and DTI Prep (https://www.nitrc.org/projects/dtiprep/)
     ├── hleMedsO.R                                         <-- surface-based measures      
     ├── hleMedsO.R                                         <-- surface-based measures      
-    ├── AFQ_MultiCompCorrectionReg.m                       <-- surface-based measures      
-    ├── hleMedsO.R                                         <-- surface-based measures      
+    ├── AFQ_MultiCompCorrectionRegSpearman.m                       <-- estimates number of contiguous nodes necessary for p-FWE < 0.05      
+    ├── hleMedsO.R                                         <-- mediation testing      
 
 As the surface-based measures we analyzed were originally output as 31 (cortical area) x 100 (surface-based measure)
