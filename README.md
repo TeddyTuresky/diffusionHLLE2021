@@ -10,9 +10,20 @@ The following scripts were used to process the raw data and run statistical anal
 
     .
     ├── dtiConvPrepHLE.sh          <-- conversion from dicom to nrrd using Slicer4 (https://www.slicer.org/) and DTI Prep (https://www.nitrc.org/projects/dtiprep/)
-    ├── hleMedsO.R                                         <-- surface-based measures      
-    ├── hleMedsO.R                                         <-- surface-based measures      
-    ├── AFQ_MultiCompCorrectionRegSpearman.m                       <-- estimates number of contiguous nodes necessary for p-FWE < 0.05      
-    ├── hleMedsO.R                                         <-- mediation testing      
+    ├── topEddyHLE.sh                                       <-- topup and eddy from FSL (https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/eddy/UsersGuide)  
+    ├── vista_preprocessingHLE.m                                         <-- tensorfitting (https://vistalab.stanford.edu/)
+    ├── DTI_AFQrun_mrdiff_SPM_HLE.m                                        <-- fiber tracking (https://github.com/yeatmanlab/AFQ)
+    ├── dti_corr_perm_100nodes_Spearman.m                    <-- partial and semipartial correlations (code fragments taken from https://github.com/yeatmanlab/AFQ 
+    ├── AFQ_MultiCompCorrectionPartSpearman.m                <-- multiple comparison corrections for StimQ, adjusted from https://github.com/yeatmanlab/AFQ   
+    ├── AFQ_MultiCompCorrectionSemiPartSpearman.m       <-- multiple comparison corrections for maternal education, adjusted from https://github.com/yeatmanlab/AFQ
+    ├── hleMedsO.R                                         <-- mediation testing 
+    
+visualizations
+
+    .
+    ├── afq_vis_lslf2                                         <-- mediation testing 
+    ├── hleMedsO.R                                         <-- mediation testing 
+
+
 
 As the surface-based measures we analyzed were originally output as 31 (cortical area) x 100 (surface-based measure)
