@@ -2,9 +2,25 @@
 
 This repository houses code (or links to code) used for the following study:
 
-##### *Ted K. Turesky\*, Joseph Sanfilippo\*, Jennifer Zuk, Banu Ahtam, Borjan Gagoski, Ally Lee, Kathryn Garrisi, Jade Dunstan, Clarisa Carruthers, Jolijn Vanderauwera, Xi Yu, Nadine Gaab (2021) Home literacy environment mediates the relationship between socioeconomic status and white matter structure in infants, bioRxiv: doi.org/10.1101/2021.11.13.468500*   \\\  \*these two authors contributed equally
+##### *Ted K. Turesky\*, Joseph Sanfilippo\*, Jennifer Zuk, Banu Ahtam, Borjan Gagoski, Ally Lee, Kathryn Garrisi, Jade Dunstan, Clarisa Carruthers, Jolijn Vanderauwera, Xi Yu, Nadine Gaab (2021) Home language and literacy environment and its relationship with socioeconomic status and white matter structure in infancy, Brain Structure and Function (in press)*   \\\  \*these two authors contributed equally
+
+We overhauled our methods during peer-review (we are genuinely grateful to the reviewers for suggesting the changes that they did). To maintain transparency, we include in this repository the code and other information related to versions of the manuscript before and after peer-review:
+
+##### After Peer-Review
+    .
+    ├── diffusion_pipeline_gen.sh                  <-- generates tract reconstructions from raw diffusion images using MRTrix, VistaSoft, and AFQ
+        ├── vista_preprocessingHLE.m               <-- aligns diffusion and T1 images
+        ├── mrtrix2babyAFQ.m                       <-- aligns diffusion and T1 images
+
+    ├── nonpar_boot_sp_corr.m               <-- semipartial correlations (code fragments taken from https://github.com/yeatmanlab/AFQ) 
+    ├── AFQ_MultiCompCorrectionSemiPartSpearman.m       <-- multiple comparison corrections for brain-behavior relations, adjusted from https://github.com/yeatmanlab/AFQ
+    ├── hleMedsB.R                                      <-- mediation testing
 
 
+
+
+
+##### Before Peer-Review
 The following scripts were used to process the raw data and run statistical analyses:
 
     .
