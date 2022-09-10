@@ -6,7 +6,7 @@ This repository houses code (or links to code) used for the following study:
 
 We overhauled our methods during peer-review (we are genuinely grateful to the reviewers for suggesting the changes that they did). To maintain transparency, we include in this repository the code and other information related to versions of the manuscript before and after peer-review:
 
-##### After Peer-Review
+**After Peer-Review**
 Diffusion Image Processing and Statistical Analyses:
 
     .
@@ -27,7 +27,7 @@ Visualizations:
 
 
 
-##### Before Peer-Review
+**Before Peer-Review**
 The following scripts were used to process the raw data and run statistical analyses:
 
     .
