@@ -8,26 +8,24 @@ We overhauled our methods during peer-review (we are genuinely grateful to the r
 
 **After Peer-Review**  
 The  scripts enclosed in this repository rely on the following packages:
-
-.
-├── Mrtrix3 | Mrtrix3Tissue
-├── Anaconda3
-├── ANTs2.3
-├── FreeSurfer6.0
-├── FSL6.0
-├── cuda10.2
-├── Matlab R2021a and the following packages (the following order of priority helps):
-   ├── Vistasoft
-   ├── SPM12
-   ├── AFQ/babyAFQ
+. Mrtrix3 | Mrtrix3Tissue
+. Anaconda3
+. ANTs2.3
+. FreeSurfer6.0
+. FSL6.0
+. cuda10.2
+. Matlab R2021a and the following packages (the following order of priority helps):
+. . Vistasoft
+. . SPM12
+. . AFQ/babyAFQ
 
 Dependences for optional calls
-├── acpcdetect
-├── netpbm
+. acpcdetect
+. netpbm
 
 Adjustments to LD_LIBRARY_PATH
-├── GCC libraries
-├── Anaconda libraries
+. GCC libraries
+. Anaconda libraries
 
 Additional prerequisite steps include ensuring the head axes are not oblique to FOV axes (or you can use the -c flag, which calls acpcdetect) and processing the anatomical image with Infant FreeSurfer.
 
