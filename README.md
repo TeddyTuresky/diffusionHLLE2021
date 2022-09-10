@@ -7,6 +7,8 @@ This repository houses code (or links to code) used for the following study:
 We overhauled our methods during peer-review (we are genuinely grateful to the reviewers for suggesting the changes that they did). To maintain transparency, we include in this repository the code and other information related to versions of the manuscript before and after peer-review:
 
 ##### After Peer-Review
+Diffusion Image Processing and Statistical Analyses:
+
     .
     ├── diffusion_pipeline_gen.sh                  <-- generates tract reconstructions from raw diffusion images using MRTrix, VistaSoft, and AFQ
         ├── vista_preprocessingHLE.m               <-- aligns diffusion and T1 images
@@ -17,6 +19,11 @@ We overhauled our methods during peer-review (we are genuinely grateful to the r
     ├── hleMedsB.R                                      <-- mediation testing
 
 
+Visualizations:
+
+    .
+    ├── vis_ind_tracts.m                                <-- generates figure 1 tracts
+    ├── afq_vis_lslfHLE.m                               <-- generates figure 2 tracts
 
 
 
