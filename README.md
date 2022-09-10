@@ -17,7 +17,7 @@ Diffusion Image Processing and Statistical Analyses:
     ├── babyAFQ_ComputeTractProperties.m*             <-- generates tract profiles with diffusion estimates and visualizations for figures
     ├── nonpar_boot_sp_corr.m                         <-- runs semipartial correlations (code fragments taken from https://github.com/yeatmanlab/AFQ) 
     ├── AFQ_MultiCompCorrectionSemiPartSpearman.m     <-- runs multiple comparison corrections for brain-behavior relations, adjusted from https://github.com/yeatmanlab/AFQ
-    ├── hleMedsB.R                                    <-- tests for mediation
+    ├── hleMedsOpen.R                                    <-- tests for mediation
 
 
 **Before Peer-Review**  
