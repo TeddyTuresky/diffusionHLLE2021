@@ -10,21 +10,14 @@ We overhauled our methods during peer-review (we are genuinely grateful to the r
 Diffusion Image Processing and Statistical Analyses:
 
     .
-    ├── diffusion_pipeline_gen.sh                  <-- generates tract reconstructions from raw diffusion images using MRTrix, VistaSoft, and AFQ
-        ├── vista_preprocessingHLE.m               <-- aligns diffusion and T1 images
-        ├── mrtrix2babyAFQ.m                       <-- aligns diffusion and T1 images
-
-    ├── nonpar_boot_sp_corr.m               <-- semipartial correlations (code fragments taken from https://github.com/yeatmanlab/AFQ) 
-    ├── AFQ_MultiCompCorrectionSemiPartSpearman.m       <-- multiple comparison corrections for brain-behavior relations, adjusted from https://github.com/yeatmanlab/AFQ
-    ├── hleMedsB.R                                      <-- mediation testing
-
-
-Visualizations:
-
-    .
-    ├── vis_ind_tracts.m                                <-- generates figure 1 tracts
-    ├── afq_vis_lslfHLE.m                               <-- generates figure 2 tracts
-
+    ├── diffusion_pipeline_gen.sh                     <-- generates tract reconstructions from raw diffusion images using MRTrix, VistaSoft, and AFQ
+        ├── vista_preprocessing.m                     <-- aligns diffusion and T1 images
+        ├── mrtrix2babyAFQ.m                          <-- runs AFQ fiber segmentation
+            ├── dti_end_tract.m                       <-- converts MRtrix *.tck file to WholeBrainFG.mat for AFQ fiber segmentation
+    ├── babyAFQ_ComputeTractProperties.m*             <-- generates tract profiles with diffusion estimates and visualizations for figures
+    ├── nonpar_boot_sp_corr.m                         <-- runs semipartial correlations (code fragments taken from https://github.com/yeatmanlab/AFQ) 
+    ├── AFQ_MultiCompCorrectionSemiPartSpearman.m     <-- runs multiple comparison corrections for brain-behavior relations, adjusted from https://github.com/yeatmanlab/AFQ
+    ├── hleMedsB.R                                    <-- tests for mediation
 
 
 **Before Peer-Review**  
