@@ -36,7 +36,7 @@ An inventory of the code in this repository, and that used for diffusion image p
         ├── vista_preprocessing.m                     <-- aligns diffusion and T1 images
         ├── mrtrix2babyAFQ.m                          <-- runs AFQ fiber segmentation
             ├── dti_end_tract.m                       <-- converts MRtrix .tck file to WholeBrainFG.mat for AFQ fiber segmentation
-    ├── babyAFQ_vis_lafHLE.m                          <-- generates tract profiles with diffusion estimates and visualizations for figures
+    ├── babyAFQ_est_vis.m                          <-- generates tract profiles with diffusion estimates and visualizations for figures
     ├── nonpar_boot_sp_corr.m                         <-- runs semipartial correlations (code fragments taken from https://github.com/yeatmanlab/AFQ) 
     ├── AFQ_MultiCompCorrectionSemiPartSpearman.m     <-- runs multiple comparison corrections for brain-behavior relations, adjusted from https://github.com/yeatmanlab/AFQ
     ├── hleMedsOpen.R                                 <-- tests for mediation
