@@ -1,4 +1,4 @@
-function [fa, md, rd, ad,babyAFQ_vis_lafHLE(sub_dir, tract, nodes)
+function [fa, md, rd, ad] = babyAFQ_vis_lafHLE(sub_dir, tract, nodes)
 % Renders fibers with tubes and signifcant nodes on mesh background.
 % Elements taken from http://yeatmanlab.github.io/AFQ/tutorials/AFQ_example_GroupComparison
 
