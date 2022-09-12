@@ -8,24 +8,24 @@ We overhauled our methods during peer-review (we are genuinely grateful to the r
 
 **After Peer-Review**  
 The  scripts enclosed in this repository rely on the following packages:
-. Mrtrix3 | Mrtrix3Tissue
-. Anaconda3
-. ANTs2.3
-. FreeSurfer6.0
-. FSL6.0
-. cuda10.2
-. Matlab R2021a and the following packages (the following order of priority helps):
-. . Vistasoft
-. . SPM12
-. . AFQ/babyAFQ
+. Mrtrix3 | Mrtrix3Tissue 
+. Anaconda3 
+. ANTs2.3 
+. FreeSurfer6.0 
+. FSL6.0 
+. cuda10.2 
+. Matlab R2021a and the following packages (the following order of priority helps): 
+. . Vistasoft 
+. . SPM12 
+. . AFQ/babyAFQ 
 
-Dependences for optional calls
-. acpcdetect
+Dependences for optional calls 
+. acpcdetect 
 . netpbm
 
 Adjustments to LD_LIBRARY_PATH
-. GCC libraries
-. Anaconda libraries
+. GCC libraries 
+. Anaconda libraries 
 
 Additional prerequisite steps include ensuring the head axes are not oblique to FOV axes (or you can use the -c flag, which calls acpcdetect) and processing the anatomical image with Infant FreeSurfer.
 
@@ -41,6 +41,7 @@ An inventory of the code in this repository, and that used for diffusion image p
     ├── AFQ_MultiCompCorrectionSemiPartSpearman.m     <-- runs multiple comparison corrections for brain-behavior relations, adjusted from https://github.com/yeatmanlab/AFQ
     ├── hleMedsOpen.R                                 <-- tests for mediation
 
+This directory also contains functions adapted from the AFQ suite (https://github.com/yeatmanlab/AFQ) and other functions (e.g., ANTS_applyTransform2Points_baby), which may be called depending upon chosen parameters.
 
 **Before Peer-Review**  
 The following scripts were used to process the raw data and run statistical analyses:
