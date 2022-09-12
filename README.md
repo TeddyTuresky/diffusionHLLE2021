@@ -7,13 +7,13 @@ This repository houses code (or links to code) used for the following study:
 We overhauled our methods during peer-review (we are genuinely grateful to the reviewers for suggesting the changes that they did). To maintain transparency, we include in this repository the code and other information related to versions of the manuscript before and after peer-review:
 
 **After Peer-Review**  
-The  scripts enclosed in this repository rely on the following packages:
-. Mrtrix3 | Mrtrix3Tissue 
-. Anaconda3 
-. ANTs2.3 
-. FreeSurfer6.0 
-. FSL6.0 
-. cuda10.2 
+The scripts enclosed in this repository rely on the following packages:  
+. Mrtrix3 | Mrtrix3Tissue  
+. Anaconda3  
+. ANTs2.3  
+. FreeSurfer6.0  
+. FSL6.0  
+. cuda10.2  
 . Matlab R2021a and the following packages (the following order of priority helps): 
 . . Vistasoft 
 . . SPM12 
